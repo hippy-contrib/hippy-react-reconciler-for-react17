@@ -1,0 +1,16 @@
+*.log
+.DS_Store
+.nyc_output
+.vscode
+coverage
+dist
+node_modules
+*.iml
+local.properties
+.idea/
+.gradle/
+build/
+
+# core
+core/ARM
+.vs/
