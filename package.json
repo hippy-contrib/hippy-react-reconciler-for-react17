@@ -1,7 +1,7 @@
 {
   "name": "@hippy/react-reconciler",
   "description": "Hippy React package for creating custom renderers.",
-  "version": "0.26.2",
+  "version": "0.26.3",
   "keywords": [
     "react",
     "hippy"

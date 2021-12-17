@@ -1,4 +1,4 @@
-/** @license React vundefined
+/** @license React v0.26.2
  * react-reconciler-reflection.development.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.

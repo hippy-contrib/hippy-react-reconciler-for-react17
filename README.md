@@ -1,3 +1,3 @@
 # hippy-react-reconciler
 
-This is special react-reconciler for creating custom hippy react renderers with some extra hooks.
+This is the react 17 special react-reconciler for creating custom hippy renderer with some extra hooks.
