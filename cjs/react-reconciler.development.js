@@ -773,8 +773,8 @@ var unhideTextInstance = $$$hostConfig.unhideTextInstance;
 var updateFundamentalComponent = $$$hostConfig.updateFundamentalComponent;
 var unmountFundamentalComponent = $$$hostConfig.unmountFundamentalComponent;
 var clearContainer = $$$hostConfig.clearContainer;
-var commitEffectsBegin = $$$hostConfig.commitEffectsBegin;
-var commitEffectsComplete = $$$hostConfig.commitEffectsComplete; // -------------------
+var commitMutationEffectsBegin = $$$hostConfig.commitMutationEffectsBegin;
+var commitMutationEffectsComplete = $$$hostConfig.commitMutationEffectsComplete; // -------------------
 //     Persistence
 //     (optional)
 // -------------------
@@ -16688,8 +16688,8 @@ function commitBeforeMutationEffects() {
 }
 
 function commitMutationEffects(root, renderPriorityLevel) {
-  if (typeof commitEffectsBegin === 'function') {
-    commitEffectsBegin();
+  if (typeof commitMutationEffectsBegin === 'function') {
+    commitMutationEffectsBegin();
   } // TODO: Should probably move the bulk of this function to commitWork.
 
 
@@ -16773,8 +16773,8 @@ function commitMutationEffects(root, renderPriorityLevel) {
     nextEffect = nextEffect.nextEffect;
   }
 
-  if (typeof commitEffectsComplete === 'function') {
-    commitEffectsComplete();
+  if (typeof commitMutationEffectsComplete === 'function') {
+    commitMutationEffectsComplete();
   }
 }
 
